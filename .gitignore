@@ -1,7 +1,6 @@
-.npy
-.log
-__pycache__/
-.ipynb_checkpoints/
+*.npy
+*.log
+*.pdf
 *.pyc
 *.pkl
 *.h5
@@ -29,8 +28,7 @@ __pycache__/
 *.mp3
 *.flac
 *.ogg
-*.zip
-*.tar.gz
+
 
 y_all_syms/
 y_no_log/
