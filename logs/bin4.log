@@ -1,0 +1,2238 @@
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/task/args_handler.py:94: UserWarning: No units given for input variables, assuming dimensionless units.
+  warnings.warn("No units given for input variables, assuming dimensionless units.")
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/task/args_handler.py:106: UserWarning: No units given for root variable, assuming dimensionless units.
+  warnings.warn("No units given for root variable, assuming dimensionless units.")
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/task/args_handler.py:126: UserWarning: No units given for fixed constants, assuming dimensionless units.
+  warnings.warn("No units given for fixed constants, assuming dimensionless units.")
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/task/args_handler.py:153: UserWarning: No units given for class free constants, assuming dimensionless units.
+  warnings.warn("No units given for class free constants, assuming dimensionless units.")
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+Loaded 156 samples, targeting bin_4 of 20
+y (log10) stats:  min=0.001  max=0.067  mean=0.022  std=0.017
+Any NaN in y: False  —  Any NaN in X: False
+
+============================================================
+Feature importance for L1_bin4:
+Variable  Pearson_r    Abs_r  Mutual_Info
+ sigma_8   0.691270 0.691270     0.340276
+ Omega_m   0.549892 0.549892     0.178497
+       w  -0.156055 0.156055     0.011634
+============================================================
+
+
+L1NORM_SR_bin4_of20_res0_fp3_lloc10_lscale5_s42 : Starting SR task
+  Target:   L1_bin4
+  Inputs:   ['Omega_m', 'sigma_8', 'w']
+  Samples:  156
+  Free consts: ['c0', 'c1', 'c2']
+  Operators: ['mul', 'add', 'sub', 'div', 'inv', 'neg', 'n2', 'sqrt', 'exp']
+
+SR task started...
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00000 ===========
+-> Time 1.43 s
+-> Memory Usage: 557.03 MB
+
+Overall best  at R=0.584836
+-> Raw expression : 
+              2
+⎛   ⎛c₀     ⎞⎞ 
+⎜σ₈⋅⎜── - c₂⎟⎟ 
+⎝   ⎝σ₈     ⎠⎠ 
+
+Best of epoch at R=0.584836
+-> Raw expression : 
+              2
+⎛   ⎛c₀     ⎞⎞ 
+⎜σ₈⋅⎜── - c₂⎟⎟ 
+⎝   ⎝σ₈     ⎠⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00001 ===========
+-> Time 32.92 s
+-> Memory Usage: 564.19 MB
+
+Overall best  at R=0.766619
+-> Raw expression : 
+1.0⋅c₁⋅c₂⋅(-Ωₘ + c₂ - σ₈)     
+───────────────────────── + c₂
+           1.0                
+
+Best of epoch at R=0.766619
+-> Raw expression : 
+1.0⋅c₁⋅c₂⋅(-Ωₘ + c₂ - σ₈)     
+───────────────────────── + c₂
+           1.0                
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00002 ===========
+-> Time 31.04 s
+-> Memory Usage: 410.45 MB
+
+Overall best  at R=0.766619
+-> Raw expression : 
+1.0⋅c₁⋅c₂⋅(-Ωₘ + c₂ - σ₈)     
+───────────────────────── + c₂
+           1.0                
+
+Best of epoch at R=0.584979
+-> Raw expression : 
+                         0.5
+⎛          c₁           ⎞   
+⎜───────────────────────⎟   
+⎜            2          ⎟   
+⎜          c₁           ⎟   
+⎜ ──────────────────────⎟   
+⎜                    0.5⎟   
+⎜ ⎛        1        ⎞   ⎟   
+⎜ ⎜─────────────────⎟   ⎟   
+⎜ ⎜⎛       1       ⎞⎟   ⎟   
+⎜ ⎜⎜───────────────⎟⎟   ⎟   
+⎜ ⎝⎝c₁⋅c₂⋅(c₂ + σ₈)⎠⎠   ⎟   
+⎝ℯ                      ⎠   
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00003 ===========
+-> Time 25.04 s
+-> Memory Usage: 418.67 MB
+
+Overall best  at R=0.771330
+-> Raw expression : 
+      ⎛         ⎛      c₁⎞⎞     
+      ⎜     1.0⋅⎝σ₈ + ℯ  ⎠⎟     
+Ωₘ⋅c₂⋅⎜c₀ + ──────────────⎟ + c₁
+      ⎝           Ωₘ      ⎠     
+
+Best of epoch at R=0.771330
+-> Raw expression : 
+      ⎛         ⎛      c₁⎞⎞     
+      ⎜     1.0⋅⎝σ₈ + ℯ  ⎠⎟     
+Ωₘ⋅c₂⋅⎜c₀ + ──────────────⎟ + c₁
+      ⎝           Ωₘ      ⎠     
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00004 ===========
+-> Time 27.30 s
+-> Memory Usage: 417.00 MB
+
+Overall best  at R=0.775250
+-> Raw expression : 
+c₁⋅(-c₀ - σ₈⋅(c₀ + c₀) - (Ωₘ + c₂ + σ₈) + 1.0)
+
+Best of epoch at R=0.775250
+-> Raw expression : 
+c₁⋅(-c₀ - σ₈⋅(c₀ + c₀) - (Ωₘ + c₂ + σ₈) + 1.0)
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00005 ===========
+-> Time 28.08 s
+-> Memory Usage: 412.50 MB
+
+Overall best  at R=0.775250
+-> Raw expression : 
+c₁⋅(-c₀ - σ₈⋅(c₀ + c₀) - (Ωₘ + c₂ + σ₈) + 1.0)
+
+Best of epoch at R=0.653171
+-> Raw expression : 
+   ⎛                      0.5⎞
+   ⎜  c₀   ⎛           σ₈⎞   ⎟
+c₀⋅⎜- ── - ⎝Ωₘ - c₂ + ℯ  ⎠   ⎟
+   ⎝  w                      ⎠
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00006 ===========
+-> Time 26.67 s
+-> Memory Usage: 575.25 MB
+
+Overall best  at R=0.817605
+-> Raw expression : 
+    -c₂⋅(Ωₘ - -σ₈)
+c₁⋅ℯ              
+
+Best of epoch at R=0.817605
+-> Raw expression : 
+    -c₂⋅(Ωₘ - -σ₈)
+c₁⋅ℯ              
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00007 ===========
+-> Time 28.38 s
+-> Memory Usage: 567.41 MB
+
+Overall best  at R=0.845105
+-> Raw expression : 
+                                     0.5    
+           ⎛ Ωₘ - c₂ + -σ₈⋅(c₁ + c₂)⎞       
+-c₂ + c₂ + ⎝ℯ                       ⎠   ⋅1.0
+
+Best of epoch at R=0.845105
+-> Raw expression : 
+                                     0.5    
+           ⎛ Ωₘ - c₂ + -σ₈⋅(c₁ + c₂)⎞       
+-c₂ + c₂ + ⎝ℯ                       ⎠   ⋅1.0
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00008 ===========
+-> Time 26.68 s
+-> Memory Usage: 571.73 MB
+
+Overall best  at R=0.845105
+-> Raw expression : 
+                                     0.5    
+           ⎛ Ωₘ - c₂ + -σ₈⋅(c₁ + c₂)⎞       
+-c₂ + c₂ + ⎝ℯ                       ⎠   ⋅1.0
+
+Best of epoch at R=0.766620
+-> Raw expression : 
+c₁⋅σ₈⋅(Ωₘ + c₀ + σ₈ + -c₀ - c₂)
+───────────────────────────────
+              σ₈               
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00009 ===========
+-> Time 26.80 s
+-> Memory Usage: 580.25 MB
+
+Overall best  at R=0.845105
+-> Raw expression : 
+                                     0.5    
+           ⎛ Ωₘ - c₂ + -σ₈⋅(c₁ + c₂)⎞       
+-c₂ + c₂ + ⎝ℯ                       ⎠   ⋅1.0
+
+Best of epoch at R=0.793089
+-> Raw expression : 
+                                        2
+c₀⋅(Ωₘ + c₀ + c₀ + c₁⋅σ₈ - c₁ + c₂ + σ₈) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00010 ===========
+-> Time 28.56 s
+-> Memory Usage: 576.48 MB
+
+Overall best  at R=0.845105
+-> Raw expression : 
+                                     0.5    
+           ⎛ Ωₘ - c₂ + -σ₈⋅(c₁ + c₂)⎞       
+-c₂ + c₂ + ⎝ℯ                       ⎠   ⋅1.0
+
+Best of epoch at R=0.775250
+-> Raw expression : 
+c₂⋅(Ωₘ - (c₀⋅(c₀ + c₀ + c₀ - c₁ - σ₈) - σ₈))
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00011 ===========
+-> Time 33.88 s
+-> Memory Usage: 578.16 MB
+
+Overall best  at R=0.845105
+-> Raw expression : 
+                                     0.5    
+           ⎛ Ωₘ - c₂ + -σ₈⋅(c₁ + c₂)⎞       
+-c₂ + c₂ + ⎝ℯ                       ⎠   ⋅1.0
+
+Best of epoch at R=0.766622
+-> Raw expression : 
+                 Ωₘ + σ₈            
+c₀ + ───────────────────────────────
+     c₀⋅c₀⋅(c₀ + c₂ - σ₈ + 1.0) + c₂
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00012 ===========
+-> Time 26.99 s
+-> Memory Usage: 582.52 MB
+
+Overall best  at R=0.845105
+-> Raw expression : 
+                                     0.5    
+           ⎛ Ωₘ - c₂ + -σ₈⋅(c₁ + c₂)⎞       
+-c₂ + c₂ + ⎝ℯ                       ⎠   ⋅1.0
+
+Best of epoch at R=0.818866
+-> Raw expression : 
+     ⎛                                 0.5     ⎞
+c₂ - ⎝c₀⋅(-Ωₘ + c₀ + c₁ - σ₈ - σ₈ + σ₈)    - c₁⎠
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00013 ===========
+-> Time 24.40 s
+-> Memory Usage: 575.06 MB
+
+Overall best  at R=0.845105
+-> Raw expression : 
+                                     0.5    
+           ⎛ Ωₘ - c₂ + -σ₈⋅(c₁ + c₂)⎞       
+-c₂ + c₂ + ⎝ℯ                       ⎠   ⋅1.0
+
+Best of epoch at R=0.775250
+-> Raw expression : 
+c₂⋅(Ωₘ + c₀ + c₁⋅(c₁ - (σ₈ - (c₀ + c₂ - σ₈))) + σ₈)
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00014 ===========
+-> Time 26.49 s
+-> Memory Usage: 580.45 MB
+
+Overall best  at R=0.886764
+-> Raw expression : 
+                                        2
+(c₁⋅(c₀⋅(Ωₘ⋅c₁ + c₁⋅c₁ + c₂) + c₁ + σ₈)) 
+
+Best of epoch at R=0.886764
+-> Raw expression : 
+                                        2
+(c₁⋅(c₀⋅(Ωₘ⋅c₁ + c₁⋅c₁ + c₂) + c₁ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00015 ===========
+-> Time 23.92 s
+-> Memory Usage: 581.56 MB
+
+Overall best  at R=0.886764
+-> Raw expression : 
+                                        2
+(c₁⋅(c₀⋅(Ωₘ⋅c₁ + c₁⋅c₁ + c₂) + c₁ + σ₈)) 
+
+Best of epoch at R=0.775250
+-> Raw expression : 
+-Ωₘ⋅c₀⋅c₂ - σ₈ - (c₁ + c₂⋅σ₈ + c₂)
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00016 ===========
+-> Time 39.14 s
+-> Memory Usage: 584.77 MB
+
+Overall best  at R=0.886764
+-> Raw expression : 
+                                        2
+(c₁⋅(c₀⋅(Ωₘ⋅c₁ + c₁⋅c₁ + c₂) + c₁ + σ₈)) 
+
+Best of epoch at R=0.851321
+-> Raw expression : 
+                                          2
+(c₂⋅(Ωₘ + c₀⋅c₂⋅(Ωₘ + c₀ + c₂ + σ₈) + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00017 ===========
+-> Time 26.89 s
+-> Memory Usage: 584.88 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00018 ===========
+-> Time 27.98 s
+-> Memory Usage: 590.81 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.886763
+-> Raw expression : 
+                                               2
+⎛   ⎛                     ⎛          σ₈⎞⎞     ⎞ 
+⎜c₀⋅⎜-Ωₘ + c₁ + c₂ + σ₈ - ⎜c₀ - c₁ + ──⎟⎟ + c₂⎟ 
+⎝   ⎝                     ⎝          c₁⎠⎠     ⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00019 ===========
+-> Time 25.04 s
+-> Memory Usage: 588.45 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.886764
+-> Raw expression : 
+                                                 2
+⎛                  ⎛     ⎛        2⎞           ⎞⎞ 
+⎝Ωₘ - c₀ + c₁ + c₂⋅⎝Ωₘ + ⎝-c₁ + c₂ ⎠⋅(-c₁ + σ₈)⎠⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00020 ===========
+-> Time 26.91 s
+-> Memory Usage: 585.75 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.886764
+-> Raw expression : 
+                                       2
+(c₀ + c₂ - (c₀ + c₁)⋅(Ωₘ + c₀⋅σ₈ + c₀)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00021 ===========
+-> Time 26.33 s
+-> Memory Usage: 432.28 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.886761
+-> Raw expression : 
+                                                 2
+((-Ωₘ + c₀⋅(Ωₘ⋅c₂ - Ωₘ + c₁ + c₁ + c₁ + σ₈))⋅1.0) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00022 ===========
+-> Time 27.24 s
+-> Memory Usage: 588.34 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.817605
+-> Raw expression : 
+ c₀⋅c₀⋅(c₂⋅(Ωₘ + c₀ - c₁ - c₁ + c₁ + σ₈) + c₂)
+ℯ                                             
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00023 ===========
+-> Time 27.93 s
+-> Memory Usage: 584.44 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.775250
+-> Raw expression : 
+c₂⋅(c₀ + c₁ + σ₈ - (c₀⋅(Ωₘ⋅(c₁ + c₁) + σ₈) - σ₈))
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00024 ===========
+-> Time 27.36 s
+-> Memory Usage: 589.69 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.846903
+-> Raw expression : 
+ c₀⋅(Ωₘ⋅c₁⋅c₁ + c₀⋅σ₈ + c₀ - c₁ + c₂ - 1.0)
+ℯ                                          
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00025 ===========
+-> Time 26.33 s
+-> Memory Usage: 589.97 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.886765
+-> Raw expression : 
+                                 2
+(c₁⋅(Ωₘ⋅c₀⋅c₂ - c₀⋅c₁ + c₂ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00026 ===========
+-> Time 23.09 s
+-> Memory Usage: 597.92 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.846903
+-> Raw expression : 
+ c₀⋅(c₂ + (Ωₘ + σ₈⋅(c₂ - (c₁ + c₂)))⋅(c₁ + c₂))
+ℯ                                              
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00027 ===========
+-> Time 26.47 s
+-> Memory Usage: 590.94 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.851319
+-> Raw expression : 
+                                   2
+(-c₀⋅(Ωₘ + c₁ + c₂ + c₂ + σ₈) + c₁) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00028 ===========
+-> Time 25.81 s
+-> Memory Usage: 569.03 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.851322
+-> Raw expression : 
+                                         2
+⎛                                c₀ + c₂⎞ 
+⎜-Ωₘ - c₀ - c₂ + c₂ + c₂ - σ₈ + ℯ       ⎟ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₁                   ⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00029 ===========
+-> Time 25.58 s
+-> Memory Usage: 594.84 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                             2
+((c₀ + c₁)⋅(-Ωₘ + c₂ + σ₈⋅(c₁ - (-c₁ + c₁)))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00030 ===========
+-> Time 25.54 s
+-> Memory Usage: 594.58 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                             2
+(c₁⋅(-Ωₘ + c₁ + c₂ - σ₈⋅(c₀ - c₁ + c₁ + c₂))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00031 ===========
+-> Time 31.88 s
+-> Memory Usage: 583.77 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.851320
+-> Raw expression : 
+                                           2
+(c₀⋅(Ωₘ + c₁ + c₂ - (c₀ + c₂ - (c₀ + σ₈)))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00032 ===========
+-> Time 32.75 s
+-> Memory Usage: 588.09 MB
+
+Overall best  at R=0.886766
+-> Raw expression : 
+                                               2
+⎛      ⎛                ⎛             c₀⎞⎞  c₀⎞ 
+⎝-c₂ + ⎝-c₀ - c₁ + σ₈ - ⎝-Ωₘ⋅c₁ + σ₈⋅ℯ  ⎠⎠⋅ℯ  ⎠ 
+
+Best of epoch at R=0.855123
+-> Raw expression : 
+                                                 2
+c₁ + c₂ + (c₀⋅(Ωₘ + Ωₘ + c₀ + c₁ + σ₈ + σ₈ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00033 ===========
+-> Time 30.59 s
+-> Memory Usage: 596.80 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00034 ===========
+-> Time 27.01 s
+-> Memory Usage: 597.08 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.846903
+-> Raw expression : 
+ -Ωₘ + c₁⋅σ₈ - (c₀ + c₁ - c₂⋅(-Ωₘ + c₁) - c₂ + σ₈)
+ℯ                                                 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00035 ===========
+-> Time 27.69 s
+-> Memory Usage: 595.25 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.846902
+-> Raw expression : 
+ c₀ + c₂⋅(Ωₘ + σ₈⋅(c₀ + c₀ - c₁ - σ₈ + σ₈)) + σ₈
+ℯ                                               
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00036 ===========
+-> Time 31.71 s
+-> Memory Usage: 601.73 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.846903
+-> Raw expression : 
+    c₂⋅(c₁⋅(c₀ - (Ωₘ + c₀⋅(-Ωₘ + c₂) - σ₈)) - c₂)
+c₂⋅ℯ                                             
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00037 ===========
+-> Time 30.78 s
+-> Memory Usage: 597.22 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.848746
+-> Raw expression : 
+                                                 2
+(c₀ + c₂⋅(c₀⋅(Ωₘ - c₀ + c₀ + σ₈) + c₀ - σ₈ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00038 ===========
+-> Time 26.65 s
+-> Memory Usage: 599.67 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.886765
+-> Raw expression : 
+                                                   2
+(c₀⋅(Ωₘ - c₂⋅(-Ωₘ + c₀ + c₁ + σ₈⋅(-c₁ + c₂))) + c₂) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00039 ===========
+-> Time 28.51 s
+-> Memory Usage: 605.81 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.851321
+-> Raw expression : 
+                                                  2
+(c₁⋅(-Ωₘ + Ωₘ + Ωₘ - c₀ - c₂ + c₂ + σ₈) + c₁ + c₂) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00040 ===========
+-> Time 29.01 s
+-> Memory Usage: 610.44 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.851320
+-> Raw expression : 
+                                   2
+(c₀⋅c₀⋅c₂⋅(Ωₘ - c₀ - c₁ + c₂ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00041 ===========
+-> Time 27.57 s
+-> Memory Usage: 598.58 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.846902
+-> Raw expression : 
+ c₁ + c₂⋅(Ωₘ + c₀⋅(σ₈ + σ₈ - (c₁ - σ₈)) + c₁) + 1.0
+ℯ                                                  
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00042 ===========
+-> Time 23.97 s
+-> Memory Usage: 602.62 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.846901
+-> Raw expression : 
+ c₂⋅(Ωₘ⋅c₀ - c₀ - c₀ + c₀ + c₀ + c₁ - σ₈) + c₂
+ℯ                                             
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00043 ===========
+-> Time 22.07 s
+-> Memory Usage: 592.89 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.886765
+-> Raw expression : 
+                                               2
+(c₀⋅(Ωₘ⋅c₁ - Ωₘ + Ωₘ + c₁ + σ₈ + σ₈) + c₀ + c₂) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00044 ===========
+-> Time 22.61 s
+-> Memory Usage: 598.33 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                              2
+⎛   ⎛        ⎛                 c₂⎞⎞          ⎞ 
+⎝c₁⋅⎝Ωₘ + c₀⋅⎝-c₁ + c₂ + σ₈ + ℯ  ⎠⎠ + c₁ + c₂⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00045 ===========
+-> Time 23.38 s
+-> Memory Usage: 601.56 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀ + (-Ωₘ⋅c₂ + Ωₘ + σ₈)⋅(c₀ + c₁ - c₂ + c₂)) 
+
+Best of epoch at R=0.851322
+-> Raw expression : 
+                                            2
+(c₀ + c₀ + c₂⋅(Ωₘ + c₀ + c₂ + c₂ + c₂ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00046 ===========
+-> Time 21.78 s
+-> Memory Usage: 602.42 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                               2
+(c₀⋅(c₁⋅(c₀⋅c₁ - (Ωₘ⋅c₂ + c₁ + c₂)) + c₂ - σ₈)) 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                               2
+(c₀⋅(c₁⋅(c₀⋅c₁ - (Ωₘ⋅c₂ + c₁ + c₂)) + c₂ - σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00047 ===========
+-> Time 23.70 s
+-> Memory Usage: 601.17 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                               2
+(c₀⋅(c₁⋅(c₀⋅c₁ - (Ωₘ⋅c₂ + c₁ + c₂)) + c₂ - σ₈)) 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                            2
+(c₂⋅(Ωₘ + c₀⋅(c₀ + σ₈ + σ₈) + c₀ + c₁ + c₂)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00048 ===========
+-> Time 26.03 s
+-> Memory Usage: 604.84 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                               2
+(c₀⋅(c₁⋅(c₀⋅c₁ - (Ωₘ⋅c₂ + c₁ + c₂)) + c₂ - σ₈)) 
+
+Best of epoch at R=0.879285
+-> Raw expression : 
+                                                 2
+(c₁⋅(Ωₘ + Ωₘ + Ωₘ + c₀ + c₂ + σ₈ + σ₈ + σ₈ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00049 ===========
+-> Time 22.89 s
+-> Memory Usage: 602.73 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                               2
+(c₀⋅(c₁⋅(c₀⋅c₁ - (Ωₘ⋅c₂ + c₁ + c₂)) + c₂ - σ₈)) 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                      2
+⎛           ⎛                c₁ + c₂⎞⎞ 
+⎝Ωₘ⋅c₀ + c₂⋅⎝c₂ + c₂ + σ₈ + ℯ       ⎠⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00050 ===========
+-> Time 21.43 s
+-> Memory Usage: 604.36 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                               2
+(c₀⋅(c₁⋅(c₀⋅c₁ - (Ωₘ⋅c₂ + c₁ + c₂)) + c₂ - σ₈)) 
+
+Best of epoch at R=0.851321
+-> Raw expression : 
+                                          2
+(c₀⋅c₁⋅(Ωₘ + c₀ - c₁ + c₁ + c₂ + c₂ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00051 ===========
+-> Time 23.93 s
+-> Memory Usage: 604.84 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00052 ===========
+-> Time 30.07 s
+-> Memory Usage: 606.83 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.848698
+-> Raw expression : 
+ c₀⋅(c₀ + c₂⋅σ₈)⋅(Ωₘ + c₁ + c₁)
+ℯ                              
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00053 ===========
+-> Time 28.60 s
+-> Memory Usage: 606.55 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.876600
+-> Raw expression : 
+c₁⋅(c₀ + σ₈)⋅(Ωₘ + c₁ + c₂)⋅(Ωₘ + c₂ + σ₈)
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00054 ===========
+-> Time 32.46 s
+-> Memory Usage: 604.86 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.886555
+-> Raw expression : 
+                                           2
+⎛   ⎛        ⎛           c₀⋅σ₈ + c₁ + σ₈⎞⎞⎞ 
+⎝c₂⋅⎝Ωₘ + c₁⋅⎝c₂ + σ₈ + ℯ               ⎠⎠⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00055 ===========
+-> Time 31.88 s
+-> Memory Usage: 603.38 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.829904
+-> Raw expression : 
+ c₁⋅(Ωₘ + Ωₘ + c₁ + c₂ + σ₈ + σ₈ + σ₈) + c₂ + c₂
+ℯ                                               
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00056 ===========
+-> Time 26.39 s
+-> Memory Usage: 607.11 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.851322
+-> Raw expression : 
+                                                 2
+(c₀⋅(Ωₘ + Ωₘ + c₀ + c₁ + c₂ + σ₈ + σ₈) + c₀ + c₁) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00057 ===========
+-> Time 24.78 s
+-> Memory Usage: 605.08 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.886763
+-> Raw expression : 
+                                        2
+(c₁⋅c₂⋅(Ωₘ⋅c₀ + c₀ + c₂ + c₂ + c₂ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00058 ===========
+-> Time 26.33 s
+-> Memory Usage: 607.62 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.886266
+-> Raw expression : 
+                                               2
+(c₂⋅(c₀ + c₂⋅(c₀⋅(Ωₘ + c₀ + c₁⋅σ₈ + c₁) + c₀))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00059 ===========
+-> Time 21.92 s
+-> Memory Usage: 615.02 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.886761
+-> Raw expression : 
+                                             2
+(c₁⋅(c₁ + c₁ + c₂⋅(c₀⋅c₂⋅(Ωₘ + c₀⋅σ₈) + c₂))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00060 ===========
+-> Time 22.25 s
+-> Memory Usage: 609.50 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                              2
+(c₀⋅c₀⋅(c₀⋅c₂⋅(Ωₘ + c₀ + 1.0) + c₁ + σ₈) + c₁) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00061 ===========
+-> Time 22.61 s
+-> Memory Usage: 605.66 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.886765
+-> Raw expression : 
+                                                   2
+(c₀⋅(c₁ + c₁ + c₂⋅(Ωₘ + c₁ + (c₀ + c₁)⋅(σ₈ + σ₈)))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00062 ===========
+-> Time 22.91 s
+-> Memory Usage: 620.09 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                                 2
+(c₂⋅(c₁⋅(c₀⋅(Ωₘ + σ₈) + c₂ + σ₈ + σ₈ + σ₈) + c₂)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00063 ===========
+-> Time 23.19 s
+-> Memory Usage: 611.66 MB
+
+Overall best  at R=0.886767
+-> Raw expression : 
+                                      2
+(c₂⋅(-Ωₘ⋅c₀ + Ωₘ + c₁ + c₂ + c₂ + σ₈)) 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                             2
+(c₀⋅c₁⋅(c₂⋅(Ωₘ⋅c₀ + Ωₘ + c₀ + c₀ + c₁) + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00064 ===========
+-> Time 22.97 s
+-> Memory Usage: 610.17 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00065 ===========
+-> Time 28.25 s
+-> Memory Usage: 452.23 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                             2
+(Ωₘ + c₀⋅c₁ + c₀ + c₂⋅(Ωₘ + c₀⋅σ₈) + c₂ + σ₈) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00066 ===========
+-> Time 32.45 s
+-> Memory Usage: 447.89 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                               2
+(c₀⋅c₂⋅(c₂⋅(Ωₘ + Ωₘ + c₀ + c₁⋅(Ωₘ + σ₈)) + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00067 ===========
+-> Time 26.93 s
+-> Memory Usage: 611.91 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                       2
+⎛   ⎛               ⎛Ωₘ⋅c₂          ⎞⎞⎞ 
+⎜c₂⋅⎜c₀ + (c₀ + c₂)⋅⎜───── + c₁ + σ₈⎟⎟⎟ 
+⎝   ⎝               ⎝ c₀            ⎠⎠⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00068 ===========
+-> Time 24.52 s
+-> Memory Usage: 612.17 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                               2
+(c₀⋅c₁⋅(c₁ + c₂⋅(Ωₘ + c₀⋅(Ωₘ + Ωₘ + Ωₘ)) + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00069 ===========
+-> Time 23.04 s
+-> Memory Usage: 611.53 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                                  2
+(c₁⋅(Ωₘ + c₀⋅(c₀ + c₂ + σ₈ + σ₈ + σ₈ + 1.0)) + c₂) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00070 ===========
+-> Time 24.11 s
+-> Memory Usage: 617.14 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                                 2
+(c₁⋅(c₀⋅(Ωₘ + Ωₘ + c₁⋅(Ωₘ + Ωₘ) + σ₈) + c₂ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00071 ===========
+-> Time 28.80 s
+-> Memory Usage: 614.75 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                                   2
+(c₀ + c₀ + c₁⋅(σ₈ + (c₀ + c₀)⋅(Ωₘ + σ₈ + σ₈)) + c₂) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00072 ===========
+-> Time 30.72 s
+-> Memory Usage: 594.67 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                             2
+(c₁⋅(c₀⋅c₀⋅c₁⋅(Ωₘ + Ωₘ + c₀ + c₂) + c₀ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00073 ===========
+-> Time 32.42 s
+-> Memory Usage: 599.20 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                               2
+(Ωₘ + c₀⋅(Ωₘ + c₁⋅σ₈ + c₁⋅(Ωₘ + c₀) + c₁ + c₂)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00074 ===========
+-> Time 32.27 s
+-> Memory Usage: 619.42 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886774
+-> Raw expression : 
+   ⎛                                     2⎞
+c₀⋅⎝c₀ + (Ωₘ + c₁ + c₂⋅(c₀⋅c₂ + σ₈ + σ₈)) ⎠
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00075 ===========
+-> Time 33.71 s
+-> Memory Usage: 614.47 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                             2
+(c₀⋅c₂⋅(c₀ + c₂⋅(Ωₘ + Ωₘ + c₀ + c₁⋅c₁) + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00076 ===========
+-> Time 32.79 s
+-> Memory Usage: 616.44 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                                  2
+(1.0⋅(c₀ + c₁ + c₁ + c₂⋅(Ωₘ + c₀⋅(c₁ + σ₈) + c₀))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00077 ===========
+-> Time 30.17 s
+-> Memory Usage: 621.48 MB
+
+Overall best  at R=0.889034
+-> Raw expression : 
+                                               2
+c₂ + (c₁⋅(Ωₘ + c₀⋅(Ωₘ⋅c₁ + c₀ + c₂ + σ₈) + c₀)) 
+
+Best of epoch at R=0.888465
+-> Raw expression : 
+                                                 2
+(c₂⋅(Ωₘ + c₀⋅(c₁ + c₂⋅(Ωₘ + c₀)⋅(c₀ + σ₈ + σ₈)))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00078 ===========
+-> Time 30.47 s
+-> Memory Usage: 619.00 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00079 ===========
+-> Time 32.07 s
+-> Memory Usage: 620.05 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                      2
+⎛  2                                 ⎞ 
+⎝c₂ ⋅(Ωₘ⋅c₀ + c₀ + c₁ + c₂ + σ₈ + σ₈)⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00080 ===========
+-> Time 30.74 s
+-> Memory Usage: 458.41 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886766
+-> Raw expression : 
+                                               2
+(c₀⋅c₂⋅(Ωₘ + c₀ + c₀ + c₀ + c₁ + c₂⋅(c₁ + σ₈))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00081 ===========
+-> Time 27.26 s
+-> Memory Usage: 629.11 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                                 2
+(c₁ + c₁ + c₂⋅(Ωₘ + c₁⋅(Ωₘ + c₀ + σ₈)) + c₂ + σ₈) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00082 ===========
+-> Time 26.50 s
+-> Memory Usage: 620.58 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                            2
+(c₁⋅(Ωₘ + c₀ + c₁ + c₁ + c₂⋅(c₀ + c₁ + σ₈))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00083 ===========
+-> Time 27.87 s
+-> Memory Usage: 625.81 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                               2
+(c₀⋅c₀⋅(Ωₘ + c₀ + c₀ + c₀ + c₁⋅(c₂ + σ₈ + σ₈))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00084 ===========
+-> Time 29.98 s
+-> Memory Usage: 627.50 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                               2
+(c₁⋅(Ωₘ⋅c₀ + Ωₘ + c₁ + c₁ + c₁ + c₂ + σ₈ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00085 ===========
+-> Time 33.55 s
+-> Memory Usage: 621.81 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                             2
+(c₁⋅c₁⋅(c₀ + c₀ + c₁ + c₂⋅(Ωₘ + c₂⋅σ₈) + c₂)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00086 ===========
+-> Time 29.74 s
+-> Memory Usage: 628.80 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                             2
+(c₁⋅c₁⋅(c₀⋅(Ωₘ + c₂⋅c₂) + c₀ + c₁ + σ₈ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00087 ===========
+-> Time 27.93 s
+-> Memory Usage: 623.56 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                         2
+c₀⋅c₂⋅(c₂⋅(c₀⋅c₁⋅(Ωₘ⋅c₁ + c₂ + σ₈) + c₁)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00088 ===========
+-> Time 28.38 s
+-> Memory Usage: 633.70 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                             2
+c₂⋅(c₁ + c₂⋅(Ωₘ⋅c₀ + Ωₘ + c₂ + σ₈ + σ₈ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00089 ===========
+-> Time 28.20 s
+-> Memory Usage: 462.08 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                         2
+c₂⋅(-c₁⋅(c₀⋅(Ωₘ⋅c₂ + σ₈ + σ₈) + c₁ + c₂)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00090 ===========
+-> Time 58.67 s
+-> Memory Usage: 634.91 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                           2
+(c₁⋅(c₀⋅c₀⋅(Ωₘ⋅c₀⋅c₀ + c₁ + σ₈) + c₂ + c₂)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00091 ===========
+-> Time 45.86 s
+-> Memory Usage: 623.48 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                     2
+(c₂⋅(Ωₘ⋅c₀ + c₀ + c₀ + c₀ + c₁ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00092 ===========
+-> Time 30.40 s
+-> Memory Usage: 624.44 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                             2
+(c₂⋅(c₀ + c₁ + c₂⋅(c₁⋅c₁⋅(Ωₘ + c₀⋅σ₈) + σ₈))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00093 ===========
+-> Time 31.90 s
+-> Memory Usage: 623.50 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                               2
+c₂⋅(c₁⋅(c₀⋅(Ωₘ + Ωₘ + c₁) + c₁ + c₁ + σ₈) + c₂) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00094 ===========
+-> Time 32.45 s
+-> Memory Usage: 623.66 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                                 2
+(c₀⋅(Ωₘ + Ωₘ + c₀ + c₀ + c₂⋅(c₀ + c₁ + σ₈) + c₂)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00095 ===========
+-> Time 33.21 s
+-> Memory Usage: 625.58 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.889573
+-> Raw expression : 
+                                                   2
+(c₁⋅(Ωₘ + c₁⋅(c₁ + c₁ + c₁ + (Ωₘ + c₂)⋅(c₀ + σ₈)))) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00096 ===========
+-> Time 31.75 s
+-> Memory Usage: 626.48 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                               2
+(c₂⋅(Ωₘ⋅c₁ + Ωₘ + Ωₘ + c₀ + c₀ + c₁ + c₂ + σ₈)) 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00097 ===========
+-> Time 34.58 s
+-> Memory Usage: 622.95 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                          2
+⎛   ⎛     c₁⋅(c₀⋅c₀ + σ₈) + σ₈⎞          ⎞ 
+⎜c₀⋅⎜Ωₘ + ────────────────────⎟ + c₁ + σ₈⎟ 
+⎝   ⎝              c₂         ⎠          ⎠ 
+
+
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:870: UserWarning: An error occurred while making prior NestedFunctions, this prior will be ignored. Error message:
+Some tokens given in argument functions: ['log'] are not in the library of tokens: ['mul' 'add' 'sub' 'div' 'inv' 'neg' 'n2' 'sqrt' 'exp' '1.0' 'c0' 'c1'
+ 'c2' 'Omega_m' 'sigma_8' 'w' 'L1_bin4' 'dummy' '-']
+  warnings.warn("An error occurred while making prior %s, this prior will be ignored. "
+/Users/arnablahiry/miniforge3/envs/phi-so/lib/python3.12/site-packages/physo/physym/prior.py:557: UserWarning: No trigonometric functions detected, (NestedTrigonometryPrior (tokens = [], max nesting level = 2)), this prior will be ignored.
+  warnings.warn("No trigonometric functions detected, (%s), this prior will be ignored." % (self))
+=========== Epoch 00098 ===========
+-> Time 35.05 s
+-> Memory Usage: 622.73 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                      2
+c₁⋅(Ωₘ + c₂⋅(Ωₘ⋅c₁⋅c₂ + c₀ + σ₈) + σ₈) 
+───────────────────────────────────────
+                  c₁                   
+
+
+=========== Epoch 00099 ===========
+-> Time 36.79 s
+-> Memory Usage: 615.52 MB
+
+Overall best  at R=0.890689
+-> Raw expression : 
+                                         2
+⎛-(Ωₘ⋅c₀⋅(Ωₘ + c₀ + c₁) + c₁ + c₂ + σ₈) ⎞ 
+⎜───────────────────────────────────────⎟ 
+⎝                  c₂                   ⎠ 
+
+Best of epoch at R=0.886767
+-> Raw expression : 
+                                               2
+(c₁⋅(c₀⋅(c₂⋅(Ωₘ⋅c₁ + Ωₘ + Ωₘ) + σ₈) + c₀ + c₁)) 
+
+
+
+L1NORM_SR_bin4_of20_res0_fp3_lloc10_lscale5_s42 : SR task finished
+Best expression found:  [n2 neg div add sigma_8 add add mul mul add add c1 c0 Omega_m c0 Omega_m
+ c1 c2 c2]
