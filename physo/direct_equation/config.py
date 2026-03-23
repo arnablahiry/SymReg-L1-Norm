@@ -29,7 +29,7 @@ import numpy as np
 # Expressions longer than this are ALWAYS rejected regardless of reward.
 # 200 is generous — typical good expressions are 5–30 nodes.
 # Lower this (e.g. 30) if you want to force simpler formulas. 40 is appropriate here.
-MAX_LENGTH = 100  # direct SR needs room: double-lobe shape + cosmo modulation = ~30-60 nodes
+MAX_LENGTH = 50  # direct SR needs room: double-lobe shape + cosmo modulation = ~30-60 nodes
 
 # Soft length prior: a Gaussian penalty centered at LENGTH_LOC.
 # Expressions shorter than LENGTH_LOC are slightly penalized for being too simple;
@@ -42,7 +42,7 @@ LENGTH_LOC = 30   # direct SR: expressions need ~20-40 nodes — 10 was killing 
 # Larger = broader tolerance around LENGTH_LOC (less aggressive penalty for length).
 # Smaller = sharper enforcement (expressions must be close to LENGTH_LOC in size).
 # → LENGTH_SCALE = 12 is moderate. Try 5–8 for stricter complexity control.
-LENGTH_SCALE = 15 # broader tolerance — allow 15-60 node expressions to compete
+LENGTH_SCALE = 30 # broader tolerance — allow 15-60 node expressions to compete
 
 
 # ==============================================================================
@@ -116,7 +116,7 @@ learning_config = {
     # expressions rather than collapsing to a single formula too early.
     # Higher = more exploration (useful early), lower = more exploitation (useful late).
     # Range: 0.001–0.05. Increase to 0.01–0.02 if SR gets stuck on Omega_m only.
-    'entropy_weight'   : 0.02,   # raised — 4 vars need more exploration to find cosmo params
+    'entropy_weight'   : 1,   # raised — 4 vars need more exploration to find cosmo params
 
     # ── Reward exploitation settings ────────────────────────────────────────────
 
