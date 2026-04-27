@@ -1,0 +1,11 @@
+Complexity,Loss,Equation
+1,0.04941181,"-0.024252916"
+4,0.049040716,"abs(i_std) * -0.030972222"
+6,0.04598811,"square(square(-0.24432689 * square(i_std)))"
+8,0.041265666,"square(square((exp(i_std) * -0.103409044) * i_std))"
+9,0.034322333,"square(square(square(-0.103409044 * (exp(i_std) * i_std))))"
+10,0.027550424,"square(square(i_std)) * ((square(i_std) * 0.15361395) - 0.37521204)"
+11,0.024069231,"(square(square(-0.24432689 * square(i_std))) - 0.08230947) * exp(i_std)"
+13,0.01351812,"(square(square(square(i_std)) * 0.055430055) - 0.09842295) * (exp(i_std) * i_std)"
+14,0.0101856645,"(square(square(square(i_std) * 0.20201457)) - 0.057686865) * square(square(i_std + 0.43122062))"
+18,0.010166251,"square(((0.68138283 + i_std) * (-0.6522034 / 1.0640295)) * square(i_std)) * ((square(i_std) * 0.15361395) - 0.37521204)"

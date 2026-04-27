@@ -1,0 +1,7 @@
+Complexity,Loss,Equation
+1,2.3153665,"0.00012428404"
+3,0.09340646,"sigma_8_std - Omega_m_std"
+5,0.06920558,"(sigma_8_std * 0.8444499) - Omega_m_std"
+7,0.054897424,"(sigma_8_std * 0.8230091) - (Omega_m_std / 0.8916652)"
+13,0.0031486044,"(sigma_8_std + (((Omega_m_std + -0.5982883) * (sigma_8_std + -0.4039802)) * 0.26102772)) - Omega_m_std"
+15,0.003148604,"sigma_8_std + ((((Omega_m_std + -0.5982883) * ((sigma_8_std + 0.2853682) - 0.6893484)) * 0.26102772) - Omega_m_std)"
